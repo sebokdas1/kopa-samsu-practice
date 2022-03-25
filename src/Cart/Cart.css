@@ -1,0 +1,13 @@
+.added-cart img{
+    width: 100px;
+}
+.added-cart{
+    display: flex;
+}
+.cart-price-name{
+    margin-left: 30px;
+}
+.cart-price-name p{
+    font-weight: 600;
+    color: goldenrod;
+}

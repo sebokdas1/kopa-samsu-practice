@@ -4,6 +4,7 @@ import Card from "./Card/Card";
 import Navbar from "./Navbar/Navbar";
 import Modal from "react-modal";
 import { CgCloseR } from "react-icons/cg";
+import Cart from "./Cart/Cart";
 
 Modal.setAppElement("#root");
 
@@ -60,11 +61,14 @@ function App() {
         </button>
         {cart.length === 0 && (
           <div className='cart-warning'>
-            <p> nothing here </p>
+            <p>Empty Cart</p>
           </div>
         )}
         {cart.map((item) => (
-          <h1>Name: {item.name}</h1>
+          <Cart
+            key={item.id}
+            item={item}
+          ></Cart>
         ))}
       </Modal>
     </div>
